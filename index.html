@@ -43,9 +43,9 @@
         </nav>
         <nav class="header-nav__mobile">
           <button class="header-nav__button" type="button">
-            <svg width="40" height="40">
-              <use href="./images/icons.svg#menu"></use>
-              <use href="./images/icons.svg#cross"></use>
+            <svg width="40" height="40" aria-level="menu switch">
+              <use class="header-nav__icon--menu" href="./images/icons.svg#menu"></use>
+              <use class="header-nav__icon--cross" href="./images/icons.svg#cross"></use>
             </svg>
           </button>
         </nav>
@@ -396,45 +396,47 @@
 
       <!-- Clients -->
       <section class="clients section">
-        <h2 class="clients-title">Постоянные клиенты</h2>
-        <ul class="clients-list list">
-          <li class="client-item">
-            <a class="clients-link" href="#"
-              ><svg class="client-icon" width="106" height="60">
-                <use href="./images/icons.svg#company_1"></use></svg
-            ></a>
-          </li>
-          <li class="client-item">
-            <a class="clients-link" href="#">
-              <svg class="client-icon" width="106" height="60">
-                <use href="./images/icons.svg#company_2"></use></svg
-            ></a>
-          </li>
-          <li class="client-item">
-            <a class="clients-link" href="#"
-              ><svg class="client-icon" width="106" height="60">
-                <use href="./images/icons.svg#company_3"></use></svg
-            ></a>
-          </li>
-          <li class="client-item">
-            <a class="clients-link" href="#">
-              <svg class="client-icon" width="106" height="60">
-                <use href="./images/icons.svg#company_4"></use></svg
-            ></a>
-          </li>
-          <li class="client-item">
-            <a class="clients-link" href="#">
-              <svg class="client-icon" width="106" height="60">
-                <use href="./images/icons.svg#company_5"></use></svg
-            ></a>
-          </li>
-          <li class="client-item">
-            <a class="clients-link" href="#"
-              ><svg class="client-icon" width="106" height="60">
-                <use href="./images/icons.svg#company_6"></use></svg
-            ></a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="clients-title">Постоянные клиенты</h2>
+          <ul class="clients-list list">
+            <li class="client-item">
+              <a class="clients-link" href="#"
+                ><svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons.svg#company_1"></use></svg
+              ></a>
+            </li>
+            <li class="client-item">
+              <a class="clients-link" href="#">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons.svg#company_2"></use></svg
+              ></a>
+            </li>
+            <li class="client-item">
+              <a class="clients-link" href="#"
+                ><svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons.svg#company_3"></use></svg
+              ></a>
+            </li>
+            <li class="client-item">
+              <a class="clients-link" href="#">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons.svg#company_4"></use></svg
+              ></a>
+            </li>
+            <li class="client-item">
+              <a class="clients-link" href="#">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons.svg#company_5"></use></svg
+              ></a>
+            </li>
+            <li class="client-item">
+              <a class="clients-link" href="#"
+                ><svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons.svg#company_6"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
@@ -446,7 +448,7 @@
             >Web<span class="footer-logo-accent">Studio</span>
           </a>
           <address>
-            <ul class="list">
+            <ul class="footer-list__adress list">
               <li class="footer-item">
                 <a
                   href="https://bit.ly/3pXMvUd"

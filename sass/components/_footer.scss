@@ -1,6 +1,10 @@
 /* Footer */
 
 .footer {
+  @media screen and (max-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   background-color: var(--accent-bacground-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -20,8 +24,20 @@
 .footer-logo-accent {
   color: var(--wite-text-color);
 }
-
+.footer-list__adress {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer-container__contacts {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
   width: 231px;
 }
 
@@ -64,19 +80,26 @@
 }
 
 .footer-container__social {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
   margin-left: 70px;
 }
 
 .footer-container {
-<<<<<<< HEAD
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
   }
-=======
-  display: flex;
-  align-items: baseline;
->>>>>>> f26fd54842f482012f371a848ce8f67d7edc381c
 }
 
 .footer-social__title--social {
@@ -124,6 +147,12 @@
 }
 
 .footer-container__newsletter {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
   margin-left: auto;
 }
 
@@ -164,13 +193,12 @@
 }
 
 .footer-input__newsletter {
-<<<<<<< HEAD
-  @media screen and (min-width: 480px) {
-    width: 100%;
+  @media screen and (max-width: 768px) {
+    max-width: 450px;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
-=======
->>>>>>> f26fd54842f482012f371a848ce8f67d7edc381c
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -195,11 +223,10 @@
 }
 
 .footer-form__newsletter {
-<<<<<<< HEAD
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 768px) {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-=======
   display: flex;
->>>>>>> f26fd54842f482012f371a848ce8f67d7edc381c
 }
