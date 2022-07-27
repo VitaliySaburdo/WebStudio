@@ -41,6 +41,14 @@
             <li class="header-nav__item"><a href="#" class="header-nav__link link">Контакты</a></li>
           </ul>
         </nav>
+        <nav class="header-nav__mobile">
+          <button class="header-nav__button" type="button">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#menu"></use>
+              <use href="./images/icons.svg#cross"></use>
+            </svg>
+          </button>
+        </nav>
         <ul class="header-contacts list">
           <li class="header-contacts--list">
             <a href="mailto:info@devstudio.com" class="header-contacts__link link"
@@ -129,7 +137,16 @@
                   id="checkbox"
                   required
                 />
-                <span class="checkbox-icon"></span> Соглашаюсь с рассылкой и принимаю
+                <span class="checkbox-icon">
+                  <svg width="16" height="15" aria-label="checkbox-switch">
+                    <use
+                      class="checkbox-icon_not-checked"
+                      href="./images/icons.svg#icon-not-checked"
+                    ></use>
+                    <use class="checkbox-icon_checked" href="./images/icons.svg#icon-checked"></use>
+                  </svg>
+                </span>
+                Соглашаюсь с рассылкой и принимаю
                 <a class="checkbox-link link" href="">Условия договора</a>
               </label>
             </div>
@@ -217,7 +234,7 @@
       </section>
 
       <!-- Team -->
-      <section class="team-section--color section">
+      <section class="team-section section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
 

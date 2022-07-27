@@ -1,46 +1,53 @@
 /* peculiarities */
 .peculiarities-list {
+  @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
+  }
 }
 
 .peculiarities-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-    text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-transform: uppercase;
 
-    margin-top: 30px;
-    margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .peculiarities-container__icon {
-    width: 270px;
-    height: 120px;
-    background: #f5f4fa;
-    border-radius: 4px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .peculiarities-icon {
-    width: 70px;
-    height: 70px;
-    fill: currentColor;
+  width: 70px;
+  height: 70px;
+  fill: currentColor;
 }
 
 .peculiarities-container {
-    width: 270px;
-    margin-left: 0;
-    margin-right: 0;
+  @media screen and (max-width: 480px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  width: 270px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .peculiarities-text {
-    line-height: 1.71;
-    margin-top: 0;
-    margin-bottom: 0;
+  line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
 }

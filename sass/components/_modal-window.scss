@@ -140,15 +140,22 @@
 }
 
 .checkbox-icon {
-    width: 16px;
-    height: 15px;
-    background-image: url(../images/off.svg);
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
     margin-right: 7px;
 }
 
-.checkbox-input:checked+.checkbox-icon {
-    background-image: url(../images/on.svg);
+.checkbox-icon_checked {
+    display: none;
 }
+
+.checkbox-input:checked+.checkbox-icon .checkbox-icon_checked{
+display: block;
+}
+ 
 
 .modal-form__icon {
     position: absolute;

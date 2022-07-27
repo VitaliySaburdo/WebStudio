@@ -1,13 +1,19 @@
 /* Logo */
 .header-logo--accent {
-    color: var(--accent-text-color);
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    text-decoration: none;
+  color: var(--accent-text-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  text-decoration: none;
 }
 
 .header-logo {
-    color: var(--text-logo-color);
+  color: var(--text-logo-color);
+}
+
+.header-logo--accent {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }

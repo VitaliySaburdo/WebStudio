@@ -1,42 +1,50 @@
 /* Clients */
 
 .clients-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    text-align: center;
-    color: var(--title-text-color);
-    margin-top: 0;
-    margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .clients-list {
+<<<<<<< HEAD
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     gap: 30px;
+  }
+=======
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+>>>>>>> f26fd54842f482012f371a848ce8f67d7edc381c
 }
 
 .client-icon {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 .clients-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--primary-icon-color);
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    border: 1px solid var(--primary-icon-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-icon-color);
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-icon-color);
 
-    transition-property: border-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
 .clients-link:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }

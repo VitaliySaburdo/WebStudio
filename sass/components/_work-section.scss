@@ -1,38 +1,41 @@
 /* Work */
 .work {
-    padding-top: 0;}
+  padding-top: 0;
+}
 
 .work-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    color: var(--title-text-color);
-    margin-top: 0;
-    margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .work-list {
+  @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
+  }
 }
 
 .work-item {
-    position: relative;
+  position: relative;
 }
 
 .work-text {
-    position: absolute;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
-    font-weight: 700;
-    line-height: calc(16 / 14);
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--wite-text-color);
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--wite-text-color);
 }
