@@ -42,10 +42,8 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-  position: absolute;
+  position: relative;
   z-index: 1000;
-  top: 13px;
-  right: 15px;
   display: inline-flex;
   margin: 0;
   padding: 0;

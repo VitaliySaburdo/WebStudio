@@ -180,10 +180,8 @@ body {
 }
 
 .header-nav__button {
-  position: absolute;
+  position: relative;
   z-index: 1000;
-  top: 13px;
-  right: 15px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
