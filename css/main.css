@@ -222,6 +222,7 @@ body {
 
 .header-nav__mobile--menu {
   display: none;
+  z-index: 500;
   position: absolute;
   top: 100%;
   left: 0;
