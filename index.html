@@ -41,14 +41,7 @@
             <li class="header-nav__item"><a href="#" class="header-nav__link link">Контакты</a></li>
           </ul>
         </nav>
-        <nav class="header-nav__mobile">
-          <button class="header-nav__button" type="button">
-            <svg width="40" height="40" aria-level="menu switch">
-              <use class="header-nav__icon--menu" href="./images/icons.svg#menu"></use>
-              <use class="header-nav__icon--cross" href="./images/icons.svg#cross"></use>
-            </svg>
-          </button>
-        </nav>
+
         <ul class="header-contacts list">
           <li class="header-contacts--list">
             <a href="mailto:info@devstudio.com" class="header-contacts__link link"
@@ -65,6 +58,60 @@
             >
           </li>
         </ul>
+        <!-- Header mobil menu-->
+        <nav class="header-nav__mobile">
+          <button
+            class="header-nav__button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            type="button"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-level="menu switch">
+              <use class="header-nav__icon--menu" href="./images/icons.svg#menu"></use>
+              <use class="header-nav__icon--cross" href="./images/icons.svg#cross"></use>
+            </svg>
+          </button>
+          <div class="header-nav__mobile--menu" id="menu-container" data-menu>
+            <ul class="header-nav__mobile--list list">
+              <li class="header-nav__mobile--item">
+                <a href="./index.html" class="header-nav__mobile--link link">Студия</a>
+              </li>
+              <li class="header-nav__mobile--item">
+                <a href="./portfolio.html" class="header-nav__mobile--link link">Портфолио</a>
+              </li>
+              <li class="header-nav__mobile--item">
+                <a href="#" class="header-nav__mobile--link link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="header-nav__mobile--contacts-list list">
+              <li class="header-nav__mobile--contacts-item">
+                <a href="mailto:info@devstudio.com" class="header-nav__mobile--contacts-mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="header-nav__mobile--contacts-item">
+                <a href="tel:+380961111111" class="header-nav__mobile--contacts-tel link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-social__menu list">
+              <li class="mobile-item__social">
+                <a class="mobile-link__social link" href="">Instagram</a>
+              </li>
+              <li class="mobile-item__social">
+                <a class="mobile-link__social link" href="">Twitter</a>
+              </li>
+              <li class="mobile-item__social">
+                <a class="mobile-link__social link" href="">Facebook</a>
+              </li>
+              <li class="mobile-item__social">
+                <a class="mobile-link__social link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -240,7 +287,17 @@
 
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/Team/img_1.jpg" alt="Игорь Демьяненко" width="270" />
+              <img
+                srcset="
+                  ./images/Team/Игорь_Демьяненко_270.jpg 270w,
+                  ./images/Team/Игорь_Демьяненко_354.jpg 354w,
+                  ./images/Team/Игорь_Демьяненко_450.jpg 450w
+                "
+                src="./images/Team/Игорь_Демьяненко_270.jpg"
+                alt="Игорь Демьяненко"
+                sizes="(min-width: 1200px) 270w, (min-width: 768px) 354w, (max-width: 767px) 450w"
+              />
+
               <div class="team-container">
                 <h3 class="team-name">Игорь Демьяненко</h3>
                 <p class="team-profession">Product Designer</p>
@@ -277,7 +334,16 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/Team/img_2.jpg" alt="Ольга Репина" width="270" />
+              <img
+                srcset="
+                  ./images/Team/Ольга_Репина_270.jpg 270w,
+                  ./images/Team/Ольга_Репина_354.jpg 354w,
+                  ./images/Team/Ольга_Репина_450.jpg 450w
+                "
+                src="./images/Team/Ольга_Репина_270.jpg"
+                alt="Игорь Демьяненко"
+                sizes="(min-width: 1200px) 270w, (min-width: 768px) 354w, (max-width: 767px) 450w"
+              />
               <div class="team-container">
                 <h3 class="team-name">Ольга Репина</h3>
                 <p class="team-profession">Frontend Developer</p>
@@ -315,7 +381,16 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/Team/img_3.jpg" alt="Николай Тарасов" width="270" />
+              <img
+                srcset="
+                  ./images/Team/Николай_Тарасов_270.jpg 270w,
+                  ./images/Team/Николай_Тарасов_354.jpg 354w,
+                  ./images/Team/Николай_Тарасов_450.jpg 450w
+                "
+                src="./images/Team/Николай_Тарасов_270.jpg"
+                alt="Игорь Демьяненко"
+                sizes="(min-width: 1200px) 270w, (min-width: 768px) 354w, (max-width: 767px) 450w"
+              />
               <div class="team-container">
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p class="team-profession">Marketing</p>
@@ -353,7 +428,16 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/Team/img_4.jpg" alt="Михаил Ермаков" width="270" />
+              <img
+                srcset="
+                  ./images/Team/Михаил_Ермаков_270.jpg 270w,
+                  ./images/Team/Михаил_Ермаков_354.jpg 354w,
+                  ./images/Team/Михаил_Ермаков_450.jpg 450w
+                "
+                src="./images/Team/Михаил_Ермаков_270.jpg"
+                alt="Игорь Демьяненко"
+                sizes="(min-width: 1200px) 270w, (min-width: 768px) 354w, (max-width: 767px) 450w"
+              />
               <div class="team-container">
                 <h3 class="team-name">Михаил Ермаков</h3>
                 <p class="team-profession">Designer</p>
@@ -503,6 +587,7 @@
             </li>
           </ul>
         </div>
+
         <div class="footer-container__newsletter">
           <p class="footer-title__newsletter">Подпишитесь на рассылку</p>
           <form class="footer-form__newsletter" action="">
