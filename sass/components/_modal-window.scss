@@ -2,6 +2,7 @@
 
 .modal-backdrop {
   position: fixed;
+  z-index: 2000;
   top: 0;
   left: 0;
   width: 100%;
@@ -18,10 +19,15 @@
 }
 
 .modal-window {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 480px) {
+    width: 85%;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
     width: 450px;
   }
+
   position: absolute;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -62,6 +68,10 @@
 }
 
 .modal-title {
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -135,6 +145,11 @@
 }
 
 .lable {
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    text-align: center;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -173,6 +188,13 @@
 }
 
 .checkbox-link {
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    text-align: center;
+    border-bottom: none;
+    text-decoration: revert;
+  }
   display: block;
   line-height: calc(24 / 14);
   border-bottom: 1px solid currentColor;
