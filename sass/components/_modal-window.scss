@@ -2,6 +2,7 @@
 
 .modal-backdrop {
   position: fixed;
+  overflow-y: scroll;
   z-index: 2000;
   top: 0;
   left: 0;
@@ -19,8 +20,10 @@
 }
 
 .modal-window {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 479px) {
     width: 85%;
+    transform: translate(-50%, -46%);
+    padding: 30px;
   }
   @media screen and (min-width: 480px) and (max-width: 1200px) {
     width: 450px;

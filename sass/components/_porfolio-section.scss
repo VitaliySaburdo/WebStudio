@@ -1,11 +1,14 @@
 /* Portfolio */
 
 .portfolio-list__button {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 15px 8px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
   }
   display: flex;
   margin-right: auto;
@@ -76,10 +79,10 @@
   @media screen and (min-width: 1200px) {
     width: calc((100% - (30px * 2)) / 3);
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 30px) / 2);
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 30px;
     &:last-child {
       margin-bottom: 0;
@@ -123,6 +126,20 @@
 }
 
 .portfolio-review {
+  @media screen and (max-width: 400px) {
+    font-size: 14px;
+    line-height: calc(22 / 14);
+    padding: 30px 24px;
+  }
+  @media screen and (min-width: 401px) and (max-width: 480px) {
+    padding: 35px 24px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
+    padding: 35px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 35px 24px;
+  }
   font-weight: 400;
   font-size: 18px;
   line-height: calc(28 / 18);

@@ -91,20 +91,17 @@
   padding: 48px 40px;
 
   &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 
+.header-nav__mobile--list {
+  margin-bottom: auto;
+}
+
 .header-nav__mobile--item {
-  @media screen and (max-width: 450px) {
-    &:last-child {
-      margin-bottom: 250px;
-    }
-  }
   margin-bottom: 32px;
-  &:last-child {
-    margin-bottom: 302px;
-  }
 }
 
 .header-nav__mobile--link {
