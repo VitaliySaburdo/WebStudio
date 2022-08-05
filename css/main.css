@@ -81,7 +81,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -638,7 +638,7 @@ body {
     padding: 30px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal-window {
     width: 450px;
   }
@@ -1478,7 +1478,7 @@ body {
   border-top: none;
   padding: 20px 25px;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-container.current {
     padding-bottom: 56px;
   }
@@ -1504,7 +1504,7 @@ body {
     padding-bottom: 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     padding-top: 0;
     padding-bottom: 0;
@@ -1559,7 +1559,7 @@ body {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container__contacts {
     text-align: center;
     margin-bottom: 60px;
