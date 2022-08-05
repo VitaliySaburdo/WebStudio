@@ -25,13 +25,6 @@
   --second-icon-color: #ffffff;
 }
 
-.portfolio-product__overlay, .portfolio-link, .portfolio-button, .modal-botton__submit, .modal-form__icon, .modal-form__field textarea, .modal-form__field input, .modal-button, .modal-backdrop, .header-contacts__link, .header-nav__link, .header-nav__mobile--link {
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -115,6 +108,13 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.portfolio-product__overlay, .portfolio-link, .portfolio-button, .modal-botton__submit, .modal-form__icon, .modal-form__field textarea, .modal-form__field input, .modal-button, .modal-backdrop, .header-contacts__link, .header-nav__link, .header-nav__mobile--link {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Header */

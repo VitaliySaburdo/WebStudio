@@ -1,17 +1,24 @@
-@import "./utils/_variables.scss";
-@import "./utils/visualy-hiden";
-@import "./base/reset-styles";
-@import "./base/body-settings";
-@import "./base/container-setting";
-@import "./components/header";
-@import "./components/logo-header";
-@import "./components/hero-section";
-@import "./components/modal-window";
-@import "./components/peculiarities-sectin";
-@import "./components/work-section";
-@import "./components/team-srction";
-@import "./components/clients-section";
-@import "./components/porfolio-section";
-@import "./components/footer";
+// Util styles
+@import './utils/variables';
+@import './utils/visualy-hiden';
 
+// Base styles
+@import './base/reset-styles';
+@import './base/body-settings';
 
+// Components styles
+@import './components/container-setting';
+@import './components/section-settings';
+@import './components/animation';
+
+// layout styles
+@import './layout/header';
+@import './layout/logo-header';
+@import './layout/hero-section';
+@import './layout/modal-window';
+@import './layout/peculiarities-sectin';
+@import './layout/work-section';
+@import './layout/team-srction';
+@import './layout/clients-section';
+@import './layout/porfolio-section';
+@import './layout/footer';
