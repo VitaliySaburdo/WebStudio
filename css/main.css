@@ -1456,7 +1456,6 @@ body {
   line-height: 1.5555555556;
   text-align: center;
   color: var(--wite-text-color);
-  padding: 63px 24px;
 }
 @media screen and (max-width: 400px) {
   .portfolio-review {
@@ -1477,7 +1476,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .portfolio-review {
-    padding: 35px 24px;
+    padding: 63px 24px;
   }
 }
 
