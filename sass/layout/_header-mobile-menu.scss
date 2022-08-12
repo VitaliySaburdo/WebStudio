@@ -1,8 +1,5 @@
 //Header mobil menu
 .header-nav__button {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
   position: relative;
   z-index: 1000;
   display: flex;
@@ -11,6 +8,10 @@
   border: none;
 
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
   &:hover,
   &:focus {

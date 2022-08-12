@@ -67,7 +67,7 @@
 }
 
 .portfolio-list {
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -131,6 +131,12 @@
 }
 
 .portfolio-review {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  text-align: center;
+  color: var(--wite-text-color);
+
   @media screen and (max-width: 400px) {
     font-size: 14px;
     line-height: calc(22 / 14);
@@ -145,24 +151,19 @@
   @media screen and (min-width: 1200px) {
     padding: 63px 24px;
   }
-
-  font-weight: 400;
-  font-size: 18px;
-  line-height: calc(28 / 18);
-  text-align: center;
-  color: var(--wite-text-color);
 }
 
 .portfolio-container {
+  max-width: 450px;
+  border: 1px solid var(--section-bacground-color);
+  border-top: none;
+  padding: 20px 25px;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     &.current {
       padding-bottom: 56px;
     }
   }
-  max-width: 450px;
-  border: 1px solid var(--section-bacground-color);
-  border-top: none;
-  padding: 20px 25px;
 }
 
 .portfolio-examples {
