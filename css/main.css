@@ -110,7 +110,7 @@ body {
   }
 }
 
-.portfolio-product__overlay, .portfolio-link, .portfolio-button, .modal-botton__submit, .modal-form__icon, .modal-form__field textarea, .modal-form__field input, .modal-button, .modal-backdrop, .header-nav__mobile--link, .header-contacts__link, .header-nav__link {
+.portfolio-product__overlay, .portfolio-link, .portfolio-button, .modal-botton__submit, .modal-form__icon, .modal-form__field textarea, .modal-form__field input, .modal-button, .modal-backdrop, .header-nav__mobile--link, .header-nav__mobile--menu, .header-contacts__link, .header-nav__link {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -341,7 +341,9 @@ body {
 }
 
 .header-nav__mobile--menu {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   z-index: 500;
   position: fixed;
   overflow-y: scroll;
@@ -351,6 +353,8 @@ body {
   height: 100%;
   background-color: #ffffff;
   padding: 48px 40px;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
 }
 @media screen and (min-width: 768px) {
   .header-nav__mobile--menu {
@@ -365,6 +369,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 1;
+  visibility: initial;
+  pointer-events: none;
 }
 
 .header-nav__mobile--list {
