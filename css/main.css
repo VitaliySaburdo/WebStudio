@@ -371,7 +371,7 @@ body {
           flex-direction: column;
   opacity: 1;
   visibility: initial;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .header-nav__mobile--list {
