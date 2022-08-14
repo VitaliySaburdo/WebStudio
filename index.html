@@ -60,18 +60,21 @@
         <!-- Header mobil menu-->
         <nav class="header-nav__mobile">
           <button
-            class="header-nav__button"
+            class="header-nav__button js-open-menu"
             aria-expanded="false"
-            aria-controls="menu-container"
+            aria-controls="mobil-menur"
             type="button"
-            data-menu-button
           >
             <svg width="40" height="40">
               <use class="header-nav__icon--menu" href="./images/icons.svg#menu"></use>
-              <use class="header-nav__icon--cross" href="./images/icons.svg#cross"></use>
             </svg>
           </button>
-          <div class="header-nav__mobile--menu" id="menu-container" data-menu>
+          <div class="header-nav__mobile--menu js-menu-container" id="mobil-menu">
+            <button class="header-nav__button js-close-menu" type="button">
+              <svg width="40" height="40">
+                <use class="header-nav__icon--cross" href="./images/icons.svg#cross"></use>
+              </svg>
+            </button>
             <ul class="header-nav__mobile--list list">
               <li class="header-nav__mobile--item">
                 <a href="./index.html" class="header-nav__mobile--link link">Студия</a>
