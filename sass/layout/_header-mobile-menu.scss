@@ -3,8 +3,7 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-  position: relative;
-  z-index: 1000;
+
   display: flex;
   margin: 0;
   padding: 0;
@@ -16,14 +15,12 @@
   &:focus {
     fill: var(--accent-text-color);
   }
-  &.is-open .header-nav__icon--cross {
-    display: block;
-  }
-  &.is-open .header-nav__icon--menu {
-    display: none;
-  }
-  .header-nav__icon--cross {
-    display: none;
+  .header-nav__mobile--menu & {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+    }
   }
 }
 .header-nav__icon--menu {
@@ -48,8 +45,8 @@
   overflow-y: scroll;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: #ffffff;
   padding: 48px 40px;
 

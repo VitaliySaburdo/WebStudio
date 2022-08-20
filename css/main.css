@@ -302,8 +302,6 @@ body {
 }
 
 .header-nav__button {
-  position: relative;
-  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,16 +318,11 @@ body {
 .header-nav__button:hover, .header-nav__button:focus {
   fill: var(--accent-text-color);
 }
-.header-nav__button.is-open .header-nav__icon--cross {
-  display: block;
+.header-nav__mobile--menu .header-nav__button {
+  position: absolute;
+  right: 15px;
+  top: 10px;
 }
-.header-nav__button.is-open .header-nav__icon--menu {
-  display: none;
-}
-.header-nav__button .header-nav__icon--cross {
-  display: none;
-}
-
 .header-nav__icon--menu {
   color: currentColor;
 }
@@ -349,8 +342,8 @@ body {
   overflow-y: scroll;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: #ffffff;
   padding: 48px 40px;
   -webkit-transition-property: opacity;
