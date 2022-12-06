@@ -1394,6 +1394,10 @@ body {
   }
 }
 
+.hide {
+  display: none;
+}
+
 .portfolio-item {
   margin-bottom: 30px;
 }

@@ -79,7 +79,9 @@
     gap: 30px;
   }
 }
-
+.hide {
+  display: none;
+}
 .portfolio-item {
   margin-bottom: 30px;
   &:last-child {
