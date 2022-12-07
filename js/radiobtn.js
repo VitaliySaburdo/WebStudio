@@ -17,8 +17,6 @@ function filterCard() {
   buttons.forEach(button =>
     button.addEventListener('click', () => {
       const currentCategory = button.dataset.filter;
-      console.log(currentCategory);
-      console.log(cards);
       filter(currentCategory, cards);
     })
   );
