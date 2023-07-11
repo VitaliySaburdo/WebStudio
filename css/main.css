@@ -1209,15 +1209,13 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .clients-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
+.clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .clients-list {
@@ -1245,11 +1243,9 @@ body {
   fill: currentColor;
 }
 
-@media screen and (max-width: 768px) {
-  .client-item {
-    width: calc((100% - 30px) / 2);
-    height: 92px;
-  }
+.client-item {
+  width: calc((100% - 30px) / 2);
+  height: 92px;
 }
 @media screen and (min-width: 768px) {
   .client-item {
