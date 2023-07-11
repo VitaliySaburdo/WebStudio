@@ -3,9 +3,12 @@
   color: var(--accent-text-color);
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: calc(31 / 26);
   text-decoration: none;
+  @include mq(desk) {
+    font-size: 26px;
+  }
 }
 
 .header-logo {
