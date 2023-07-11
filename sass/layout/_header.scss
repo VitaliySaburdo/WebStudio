@@ -7,22 +7,21 @@
 /* Header Nav */
 
 .header-menu {
-  &.container {
-    padding-bottom: 0;
-    padding-top: 0;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  @media screen and (max-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     display: flex;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
+  }
+
+  &.container {
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
