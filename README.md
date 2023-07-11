@@ -20,4 +20,4 @@ The following libraries and technologies are used in the project:
 - SASS(mixins, placeholders);
 - Adaptive CSS (for 3 breakpoints 480px 768px and 1200px);
 - JavaScript;
-- Radio Buttons;
+- Radio Buttons on page "Portfolio";
