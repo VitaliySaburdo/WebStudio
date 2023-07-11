@@ -5,7 +5,7 @@
   padding-top: 0;
   padding-bottom: 0;
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -26,13 +26,12 @@
   color: var(--wite-text-color);
 }
 
-.footer-list__adress {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.footer-list__address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .footer-container__contacts {
   width: 231px;
   display: flex;
@@ -40,7 +39,7 @@
   text-align: center;
   margin-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     text-align: left;
     margin-bottom: 0;
   }
@@ -91,11 +90,11 @@
   margin-left: 0px;
   margin-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     text-align: center;
     margin-left: 165px;
   }
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     margin-left: 70px;
   }
 }

@@ -17,6 +17,7 @@
   @include mq(tab) {
     width: 768px;
   }
+
   @include mq(desk) {
     width: 1200px;
   }
