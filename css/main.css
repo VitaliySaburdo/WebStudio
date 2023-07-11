@@ -15,11 +15,11 @@
   --wite-background-color: #ffffff;
   --button-color: #f5f4fa;
   --accent-background-color: #2f303a;
-  --section-bacground-color: #eeeeee;
+  --section-background-color: #eeeeee;
   --alt-section-color: #e5e5e5;
   --team-background-color: #f5f4fa;
   /* Line color */
-  --header-line-colour: #ececec;
+  --header-line-color: #ececec;
   /* Icon color*/
   --primary-icon-color: #afb1b8;
   --second-icon-color: #ffffff;
@@ -131,7 +131,7 @@ body {
 
 /* Header */
 .header {
-  border-bottom: 1px solid var(--header-line-colour);
+  border-bottom: 1px solid var(--header-line-color);
   position: relative;
 }
 
@@ -1562,7 +1562,7 @@ body {
 }
 
 .portfolio-container {
-  border: 1px solid var(--section-bacground-color);
+  border: 1px solid var(--section-background-color);
   border-top: none;
   padding: 20px 25px;
 }
