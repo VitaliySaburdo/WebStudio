@@ -1194,18 +1194,18 @@ body {
 
 /* Clients */
 .clients-title {
+  font-size: 28px;
+  line-height: 1.1785714286;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
   text-align: center;
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .clients-title {
-    font-size: 28px;
-    line-height: 1.1785714286;
+    font-size: 36px;
+    line-height: 1.1666666667;
   }
 }
 
