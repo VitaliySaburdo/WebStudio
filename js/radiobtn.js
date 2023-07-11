@@ -4,9 +4,9 @@ function filterCard() {
 
   function filter(category, items) {
     items.forEach(item => {
-      const isItemFiltred = !item.classList.contains(category);
+      const isItemFiltered = !item.classList.contains(category);
       const categoryAll = category.toLowerCase() === 'all';
-      if (isItemFiltred && !categoryAll) {
+      if (isItemFiltered && !categoryAll) {
         item.classList.add('hide');
       } else {
         item.classList.remove('hide');
