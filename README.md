@@ -18,6 +18,6 @@ The following libraries and technologies are used in the project:
 
 - HTML;
 - SASS(mixins, placeholders);
-- Adaptive CSS (for 3 breakpoints 320px 768px and );
+- Adaptive CSS (for 3 breakpoints 480px 768px and 1200px);
 - JavaScript;
 - Radio Buttons;
