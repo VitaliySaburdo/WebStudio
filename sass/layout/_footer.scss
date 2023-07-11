@@ -162,14 +162,13 @@
 }
 
 .footer-container__newsletter {
-  @include mq(tab) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @include mq(desk) {
     margin-left: auto;
+    align-items: start;
   }
 }
 
@@ -181,9 +180,6 @@
   text-transform: uppercase;
   color: var(--wite-text-color);
   margin-bottom: 20px;
-  @include mq(tab-only) {
-    text-align: center;
-  }
 }
 
 .footer-button__newsletter {
@@ -213,23 +209,6 @@
 }
 
 .footer-input__newsletter {
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    width: 300px;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 20px;
-  }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 450px;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 20px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 450px;
-    margin-bottom: 20px;
-  }
-  width: 358px;
   height: 50px;
   padding: 15px 16px;
   border: 0;
@@ -237,11 +216,28 @@
   background-color: var(--accent-background-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-right: 12px;
+
   color: var(--wite-text-color);
   transition-property: outline-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include mq(mob-sm-only) {
+    width: 300px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  @include mq(mob) {
+    width: 450px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  @include mq(desk) {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .footer-input__newsletter:focus {
@@ -253,15 +249,12 @@
 }
 
 .footer-form__newsletter {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mq(desk) {
+    flex-direction: row;
+    align-items: start;
+  }
 }
