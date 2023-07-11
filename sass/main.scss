@@ -1,5 +1,6 @@
 // Util styles
 @import './utils/variables';
+@import './utils/mixin';
 @import './utils/visualy-hiden';
 
 // Base styles
@@ -17,9 +18,9 @@
 @import './layout/logo-header';
 @import './layout/hero-section';
 @import './layout/modal-window';
-@import './layout/peculiarities-sectin';
+@import './layout/peculiarities-section';
 @import './layout/work-section';
-@import './layout/team-srction';
+@import './layout/team-section';
 @import './layout/clients-section';
-@import './layout/porfolio-section';
+@import './layout/portfolio-section';
 @import './layout/footer';
