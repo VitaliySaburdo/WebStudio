@@ -1,6 +1,6 @@
 //Header mobil menu
 .header-nav__button {
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     display: none;
   }
 
@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   border: none;
-
   background-color: transparent;
 
   &:hover,
@@ -19,23 +18,20 @@
     position: absolute;
     right: 15px;
     top: 10px;
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-    }
   }
 }
 .header-nav__icon--menu {
   color: currentColor;
 }
+
 .header-nav__mobile {
-  @media screen and (max-width: 768px) {
-    display: block;
+  display: block;
+  @include mq(tab) {
+    display: none;
   }
 }
 
 .header-nav__mobile--menu {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -47,7 +43,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: var(--wite-background-color);
   padding: 48px 40px;
 
   transition-property: opacity;
@@ -60,6 +56,9 @@
     opacity: 1;
     visibility: initial;
     pointer-events: auto;
+  }
+  @include mq(tab) {
+    display: none;
   }
 }
 
