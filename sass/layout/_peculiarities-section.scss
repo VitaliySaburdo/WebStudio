@@ -1,22 +1,19 @@
 /* peculiarities */
 .peculiarities-list {
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @include mq(tab-only) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     display: flex;
     gap: 30px;
   }
 }
 
 .peculiarities-title {
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -24,14 +21,19 @@
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   text-transform: uppercase;
+  text-align: center;
 
   margin-top: 30px;
   margin-bottom: 10px;
+
+  @include mq(tab) {
+    text-align: start;
+  }
 }
 
 .peculiarities-container__icon {
   height: 120px;
-  background: #f5f4fa;
+  background-color: var(--button-color);
   border-radius: 4px;
   align-items: center;
   display: flex;
@@ -45,25 +47,22 @@
 }
 
 .peculiarities-container {
-  @media screen and (min-width: 768px) {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mq(tab) {
     width: 354px;
     margin-left: 0;
     margin-right: 0;
   }
 
-  @media screen and (max-width: 767px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    margin-bottom: 30px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     width: 270px;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
