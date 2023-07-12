@@ -7,19 +7,20 @@
 /* Header Nav */
 
 .header-menu {
+  padding-bottom: 16px;
+  padding-top: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @include mq(tab-only) {
     display: flex;
+    padding-bottom: 0;
+    padding-top: 0;
   }
   @include mq(desk) {
     display: flex;
     align-items: center;
-  }
-
-  &.container {
     padding-bottom: 0;
     padding-top: 0;
   }

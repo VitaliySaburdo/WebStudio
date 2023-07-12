@@ -39,17 +39,16 @@
   background-color: var(--accent-background-color);
   text-align: center;
 
-  @include mq(mob-lg-only) {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Hero/hero_480@1x.jpg);
+  max-width: 480px;
+  padding-top: 58px;
+  padding-bottom: 58px;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/Hero/hero_480@1x.jpg);
-    max-width: 480px;
-    padding-top: 58px;
-    padding-bottom: 58px;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/Hero/hero_480@2x.jpg);
-    }
+      url(../images/Hero/hero_480@2x.jpg);
   }
+
   @include mq(tab) {
     max-width: 768px;
     padding-top: 58px;

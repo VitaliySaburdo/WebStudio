@@ -1,25 +1,54 @@
 //Header mobil menu
-.header-nav__button {
+
+.header__burger {
+  position: relative;
+  z-index: 1000;
+  width: 24px;
+  height: 16px;
+  transition: all 0.3s ease 0s;
+
+  &::before,
+  &::after,
+  & span {
+    content: '';
+    background-color: var(--primary-text-color);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  & span {
+    top: 6.5px;
+  }
+
+  &.active span {
+    transform: scale(0);
+  }
+
+  &.active::before {
+    transform: rotate(45deg);
+    top: 6.5px;
+  }
+  &.active::after {
+    transform: rotate(-45deg);
+    bottom: 6.5px;
+  }
+
   @include mq(tab) {
     display: none;
   }
-
-  display: flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-
-  &:hover,
-  &:focus {
-    fill: var(--accent-text-color);
-  }
-  .header-nav__mobile--menu & {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-  }
 }
+
 .header-nav__icon--menu {
   color: currentColor;
 }
@@ -49,7 +78,7 @@
   transition-property: opacity;
   @extend %animation;
 
-  &.is-open {
+  &.active {
     display: flex;
     flex-direction: column;
 
