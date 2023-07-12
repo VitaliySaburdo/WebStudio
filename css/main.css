@@ -1036,17 +1036,17 @@ body {
 /* Team */
 .team-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .team-title {
-    font-size: 28px;
-    line-height: 1.1785714286;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
@@ -1054,22 +1054,18 @@ body {
   background-color: var(--team-background-color);
 }
 
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 @media screen and (min-width: 1200px) {
   .team-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
