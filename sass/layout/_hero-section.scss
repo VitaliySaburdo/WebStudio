@@ -51,18 +51,21 @@
     }
   }
   @include mq(tab) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/Hero/hero_768@1x.jpg);
     max-width: 768px;
     padding-top: 58px;
     padding-bottom: 58px;
 
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/Hero/hero_768@1x.jpg);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/Hero/hero_768@2x.jpg);
     }
   }
   @include mq(desk) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/Hero/hero_1200@1x.jpg);
     max-width: 1600px;
@@ -70,29 +73,5 @@
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/Hero/hero_1200@2x.jpg);
     }
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
-
-.hero-button {
-  background-color: var(--accent-text-color);
-  color: var(--wite-text-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
-  border: 0;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent-button-color);
   }
 }
