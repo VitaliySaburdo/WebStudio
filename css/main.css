@@ -40,6 +40,13 @@
   overflow: hidden;
 }
 
+.portfolio-product__overlay, .portfolio-link, .portfolio-button, .modal-botton__submit, .modal-form__icon, .modal-form__field textarea, .modal-form__field input, .modal-button, .modal-backdrop, .header-nav__mobile--link, .header-nav__mobile--menu, .header-contacts__link, .header-nav__link {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -75,6 +82,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 /* Contemner settings */
 .container {
   padding-left: 15px;
@@ -104,13 +118,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 /* Logo */
 .site-logo--accent {
   display: block;
@@ -129,13 +136,6 @@ body {
 
 .site-logo {
   color: var(--text-logo-color);
-}
-
-.portfolio-product__overlay, .portfolio-link, .portfolio-button, .modal-botton__submit, .modal-form__icon, .modal-form__field textarea, .modal-form__field input, .modal-button, .modal-backdrop, .header-nav__mobile--link, .header-nav__mobile--menu, .header-contacts__link, .header-nav__link {
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Header */

@@ -2,16 +2,16 @@
 @import './utils/variables';
 @import './utils/mixin';
 @import './utils/visualy-hiden';
+@import './utils/animation';
 
 // Base styles
 @import './base/reset-styles';
 @import './base/body-settings';
+@import './base/section-settings';
+@import './base/container-setting';
 
 // Components styles
-@import './components/container-setting';
-@import './components/section-settings';
 @import './components/site-logo';
-@import './components/animation';
 
 // layout styles
 @import './layout/header';
