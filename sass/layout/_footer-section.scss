@@ -171,32 +171,6 @@
   margin-bottom: 20px;
 }
 
-.footer-button__newsletter {
-  display: flex;
-  align-items: center;
-  font-family: Roboto;
-  background-color: var(--accent-color);
-  color: var(--wite-text-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  text-align: center;
-  border-radius: 4px;
-  padding: 10px 28px;
-  max-width: 200px;
-  max-height: 50px;
-  border: 0;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-button__newsletter:hover {
-  background-color: var(--accent-button-color);
-}
-
 .footer-input__newsletter {
   height: 50px;
   padding: 15px 16px;
