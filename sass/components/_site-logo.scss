@@ -1,5 +1,5 @@
 /* Logo */
-.site-logo--accent {
+.site-logo {
   display: block;
   color: var(--accent-text-color);
   font-family: var(--secondary-font);
@@ -13,6 +13,10 @@
   }
 }
 
-.site-logo {
+.site-logo--header {
   color: var(--text-logo-color);
+}
+
+.site-logo--footer {
+  color: var(--wite-text-color);
 }

@@ -11,19 +11,8 @@
   }
 }
 
-.footer-logo {
-  display: inline-block;
-  color: var(--accent-text-color);
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  text-decoration: none;
-  margin-bottom: 20px;
-}
-
-.footer-logo-accent {
-  color: var(--wite-text-color);
+.footer__address {
+  margin-top: 20px;
 }
 
 .footer-list__address {
@@ -100,18 +89,18 @@
 }
 
 .footer-container {
-  @media screen and (max-width: 767px) {
+  @include mq(mob-lg-only) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
   }
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     display: flex;
     align-items: baseline;
   }
