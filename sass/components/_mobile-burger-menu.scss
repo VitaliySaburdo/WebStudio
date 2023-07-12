@@ -63,7 +63,6 @@
 .header-nav__mobile--menu {
   transform: translateX(100%);
   pointer-events: none;
-  overflow: auto;
   z-index: 500;
   position: fixed;
   overflow-y: scroll;
@@ -90,7 +89,7 @@
 }
 
 .header-nav__mobile--list {
-  margin-bottom: auto;
+  margin-bottom: 302px;
 }
 
 .header-nav__mobile--item {

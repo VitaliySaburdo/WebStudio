@@ -30,6 +30,6 @@
     if (!e.matches) return;
     mobileMenu.classList.remove('active');
     toggleMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+    enableScroll();
   });
 })();

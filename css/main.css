@@ -242,7 +242,6 @@ body {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   pointer-events: none;
-  overflow: auto;
   z-index: 500;
   position: fixed;
   overflow-y: scroll;
@@ -280,7 +279,7 @@ body {
 }
 
 .header-nav__mobile--list {
-  margin-bottom: auto;
+  margin-bottom: 302px;
 }
 
 .header-nav__mobile--item {
@@ -1104,12 +1103,6 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 1200px) {
-  .team-item {
-    margin-bottom: 30px;
-    max-width: 270px;
-  }
-}
 @media screen and (max-width: 767px) {
   .team-item {
     margin-bottom: 30px;
@@ -1119,6 +1112,12 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-item {
     width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    margin-bottom: 30px;
+    max-width: 270px;
   }
 }
 
