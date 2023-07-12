@@ -12,15 +12,15 @@
 
 // Components styles
 @import './components/site-logo';
+@import './components/mobile-burger-menu';
+@import './components/modal-window';
 
 // layout styles
-@import './layout/header';
-@import './layout/header-mobile-menu';
+@import './layout/header-section';
 @import './layout/hero-section';
-@import './layout/modal-window';
 @import './layout/peculiarities-section';
 @import './layout/work-section';
 @import './layout/team-section';
 @import './layout/clients-section';
 @import './layout/portfolio-section';
-@import './layout/footer';
+@import './layout/footer-section';
