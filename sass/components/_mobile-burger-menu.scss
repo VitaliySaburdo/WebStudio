@@ -61,10 +61,10 @@
 }
 
 .header-nav__mobile--menu {
-  transform: translateX(0);
+  transform: translateX(100%);
   // visibility: hidden;
   pointer-events: none;
-
+  overflow: auto;
   z-index: 500;
   position: fixed;
   overflow-y: scroll;
@@ -81,7 +81,7 @@
   &.active {
     display: flex;
     flex-direction: column;
-    transform: translateX(100%);
+    transform: translateX(0);
     // opacity: 1;
     // visibility: initial;
     pointer-events: auto;

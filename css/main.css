@@ -239,9 +239,10 @@ body {
 }
 
 .header-nav__mobile--menu {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   pointer-events: none;
+  overflow: auto;
   z-index: 500;
   position: fixed;
   overflow-y: scroll;
@@ -268,8 +269,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
   pointer-events: auto;
 }
 @media screen and (min-width: 768px) {
