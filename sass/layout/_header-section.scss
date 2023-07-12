@@ -11,10 +11,10 @@
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @include mq(tab-only) {
     display: flex;
   }
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     display: flex;
     align-items: center;
   }
@@ -27,10 +27,10 @@
 
 .header-nav {
   display: none;
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @include mq(tab-only) {
     display: block;
   }
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     display: flex;
     align-items: center;
     margin-left: 93px;
@@ -102,10 +102,10 @@
 }
 
 .header-contacts--list:first-child {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  margin-right: 50px;
+  @include mq(tab-only) {
     margin-right: 0;
   }
-  margin-right: 50px;
 }
 
 .header-contacts__link {
@@ -127,7 +127,7 @@
     color: var(--accent-text-color);
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include mq(tab-only) {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 12px;
