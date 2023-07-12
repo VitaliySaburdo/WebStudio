@@ -61,8 +61,8 @@
 }
 
 .header-nav__mobile--menu {
-  opacity: 0;
-  visibility: hidden;
+  transform: translateX(0);
+  // visibility: hidden;
   pointer-events: none;
 
   z-index: 500;
@@ -75,17 +75,18 @@
   background-color: var(--wite-background-color);
   padding: 48px 40px;
 
-  transition-property: opacity;
-  @extend %animation;
+  transition-property: transform;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 
   &.active {
     display: flex;
     flex-direction: column;
-
-    opacity: 1;
-    visibility: initial;
+    transform: translateX(100%);
+    // opacity: 1;
+    // visibility: initial;
     pointer-events: auto;
   }
+
   @include mq(tab) {
     display: none;
   }
