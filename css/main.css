@@ -977,6 +977,11 @@ body {
 .work {
   padding-top: 0;
 }
+@media screen and (max-width: 1200px) {
+  .work {
+    display: none;
+  }
+}
 
 .work-title {
   font-weight: 700;
