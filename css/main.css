@@ -275,7 +275,7 @@ body {
 }
 
 .header-nav__mobile--list {
-  margin-bottom: 302px;
+  margin-bottom: 250px;
 }
 
 .header-nav__mobile--item {
@@ -337,9 +337,6 @@ body {
 }
 @media screen and (max-width: 420px) {
   .mobile-social__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 20px;
