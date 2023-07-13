@@ -465,12 +465,6 @@ body {
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
-.modal-form__field label {
-  font-size: 12px;
-  line-height: 1.1666666667;
-  letter-spacing: 0.01em;
-  margin-bottom: 4px;
-}
 .modal-form__field input {
   margin: 0;
   height: 40px;
@@ -506,24 +500,33 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 12px;
   line-height: 1.1666666667;
-}
-@media screen and (max-width: 480px) {
-  .label {
-    font-size: 10px;
-    line-height: 1.2;
-    text-align: center;
-  }
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .label {
     font-size: 14px;
     line-height: 1.7142857143;
+  }
+}
+
+.checkbox-link {
+  font-size: 12px;
+  line-height: 1.1666666667;
+  text-align: center;
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+  color: var(--accent-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-link {
+    font-size: 14px;
+    line-height: 1.7142857143;
+    margin-left: 5px;
   }
 }
 
@@ -553,21 +556,6 @@ body {
   fill: var(--title-text-color);
   -webkit-transition-property: fill;
   transition-property: fill;
-}
-
-.checkbox-link {
-  display: block;
-  font-size: 10px;
-  line-height: 1.2;
-  text-align: center;
-  -webkit-text-decoration: revert;
-          text-decoration: revert;
-  color: var(--accent-text-color);
-}
-@media screen and (min-width: 480px) {
-  .checkbox-link {
-    margin-left: 5px;
-  }
 }
 
 .modal-form__field--comment {

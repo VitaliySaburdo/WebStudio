@@ -93,12 +93,6 @@
     letter-spacing: 0.01em;
     margin-bottom: 4px;
   }
-  & label {
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
-    margin-bottom: 4px;
-  }
 
   & input {
     margin: 0;
@@ -137,20 +131,29 @@
 }
 
 .label {
-  @media screen and (max-width: 480px) {
-    font-size: 10px;
-    line-height: calc(12 / 10);
-    text-align: center;
-  }
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  width: 100%;
+
   @include mq(desk) {
     font-size: 14px;
     line-height: calc(24 / 14);
   }
-  display: inline-flex;
-  width: 100%;
-  align-items: center;
+}
+
+.checkbox-link {
   font-size: 12px;
   line-height: calc(14 / 12);
+  text-align: center;
+  text-decoration: revert;
+  color: var(--accent-text-color);
+  @include mq(desk) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    margin-left: 5px;
+  }
 }
 
 .checkbox-icon {
@@ -177,18 +180,6 @@
   fill: var(--title-text-color);
   transition-property: fill;
   @extend %animation;
-}
-
-.checkbox-link {
-  display: block;
-  font-size: 10px;
-  line-height: calc(12 / 10);
-  text-align: center;
-  text-decoration: revert;
-  color: var(--accent-text-color);
-  @include mq(mob) {
-    margin-left: 5px;
-  }
 }
 
 .modal-form__field--comment {
