@@ -20,15 +20,6 @@
 }
 
 .modal-window {
-  @media screen and (max-width: 479px) {
-    width: 85%;
-    transform: translate(-50%, -46%);
-    padding: 30px;
-  }
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    width: 450px;
-  }
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,9 +33,7 @@
 }
 
 .modal-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centered-flex();
   position: absolute;
   width: 30px;
   height: 30px;
@@ -70,16 +59,17 @@
 }
 
 .modal-title {
-  @media screen and (max-width: 480px) {
-    font-size: 14px;
-    line-height: calc(18 / 14);
-  }
   font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23 / 20);
+  font-size: 14px;
+  line-height: calc(18 / 14);
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 12px;
+
+  @include mq(mob) {
+    font-size: 20px;
+    line-height: calc(23 / 20);
+  }
 }
 
 .modal-form {
@@ -190,19 +180,15 @@
 }
 
 .checkbox-link {
-  @media screen and (max-width: 480px) {
-    font-size: 10px;
-    line-height: calc(12 / 10);
-    text-align: center;
-    border-bottom: none;
-    text-decoration: revert;
-  }
   display: block;
-  line-height: calc(24 / 14);
-  border-bottom: 1px solid currentColor;
-  line-height: 0.8;
-  margin-left: 5px;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  text-align: center;
+  text-decoration: revert;
   color: var(--accent-text-color);
+  @include mq(mob) {
+    margin-left: 5px;
+  }
 }
 
 .modal-form__field--comment {
