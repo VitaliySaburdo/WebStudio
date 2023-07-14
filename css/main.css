@@ -40,6 +40,10 @@
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .portfolio-product__overlay, .portfolio-link, .portfolio-button, .header-contacts__link, .header-nav__link, .modal-form__icon, .modal-form__field textarea, .modal-form__field input, .modal-button, .modal-backdrop, .header-nav__mobile--link, .button-style {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -140,6 +144,26 @@ body {
 
 .site-logo--footer {
   color: var(--wite-text-color);
+}
+
+.scroll-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.scroll-to-top-btn.show {
+  display: block;
 }
 
 .button-style {
