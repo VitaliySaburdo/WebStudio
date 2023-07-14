@@ -6,6 +6,7 @@
   anchorLinks.forEach(link => {
     link.addEventListener('click', () => {
       toggleMenu();
+      enableScroll();
     });
   });
 
