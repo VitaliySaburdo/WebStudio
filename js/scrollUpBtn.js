@@ -1,4 +1,3 @@
-// Отображение кнопки прокрутки вверх при прокрутке страницы
 window.onscroll = function () {
   scrollFunction();
 };
@@ -13,7 +12,6 @@ function scrollFunction() {
   }
 }
 
-// Плавная прокрутка вверх при клике на кнопку
 document.getElementById('scrollToTopBtn').addEventListener('click', function () {
   scrollToTop();
 });

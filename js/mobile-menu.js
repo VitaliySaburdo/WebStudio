@@ -1,6 +1,14 @@
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const toggleMenuBtn = document.querySelector('.js-toggle-menu');
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+  anchorLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      toggleMenu();
+    });
+  });
+
   const body = document.body;
 
   const toggleMenu = () => {
