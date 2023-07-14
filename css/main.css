@@ -147,23 +147,27 @@ body {
 }
 
 .scroll-to-top-btn {
-  display: none;
+  opacity: 0;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 50px;
+  right: 50px;
   width: 40px;
   height: 40px;
   border: none;
   border-radius: 50%;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--accent-text-color);
+  color: var(--wite-text-color);
   font-size: 16px;
   text-align: center;
+  pointer-events: none;
   cursor: pointer;
+  -webkit-transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-to-top-btn.show {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .button-style {
