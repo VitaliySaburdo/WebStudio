@@ -16,11 +16,11 @@ site consists of two pages "Studio" and "Portfolio".
 
 ## Technologies
 
-The following libraries and technologies are used in the project:
+The following technologies are used in the project:
 
 - HTML;
 - SASS(mixins, placeholders);
 - Adaptive CSS (for 3 breakpoints mobile, tablet and desktop devices);
-- "Mobile First" approach
-- JavaScript;
+- "Mobile First" approach;
+- JavaScript (Button "scroll up", Mobile menu, Modal window);
 - Radio Buttons on page "Portfolio";
