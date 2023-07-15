@@ -54,7 +54,7 @@
 }
 
 .portfolio-list {
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -72,11 +72,11 @@
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     flex-basis: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     flex-basis: calc((100% - (30px * 2)) / 3);
   }
 }
@@ -109,7 +109,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(33, 150, 243, 0.9);
+  background-color: var(--overlay-background-color);
   transform: translateY(101%);
 
   transition-property: transform;
@@ -122,19 +122,9 @@
   line-height: calc(28 / 18);
   text-align: center;
   color: var(--wite-text-color);
+  padding: 30px 24px;
 
-  @media screen and (max-width: 400px) {
-    font-size: 14px;
-    line-height: calc(22 / 14);
-    padding: 30px 24px;
-  }
-  @media screen and (min-width: 401px) and (max-width: 480px) {
-    padding: 35px 24px;
-  }
-  @media screen and (min-width: 481px) and (max-width: 1199px) {
-    padding: 35px 24px;
-  }
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     padding: 63px 24px;
   }
 }
@@ -144,7 +134,7 @@
   border-top: none;
   padding: 20px 25px;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include mq(tab-only) {
     &.current {
       padding-bottom: 56px;
     }
