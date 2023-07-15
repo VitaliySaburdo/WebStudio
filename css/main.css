@@ -1306,9 +1306,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .portfolio-list__button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-right: auto;
     margin-left: auto;
     -webkit-box-pack: center;
@@ -1318,23 +1315,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .portfolio-list__button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-bottom: 50px;
   }
-}
-
-.portfolio-item__button {
-  margin-right: 8px;
-}
-.portfolio-item__button:last-child {
-  margin-right: 0;
 }
 
 .portfolio-button {

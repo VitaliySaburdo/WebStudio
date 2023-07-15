@@ -7,25 +7,13 @@
   gap: 15px 8px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
+  @include mq(tab) {
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
   }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
+  @include mq(desk) {
     margin-bottom: 50px;
-  }
-}
-
-.portfolio-item__button {
-  margin-right: 8px;
-  &:last-child {
-    margin-right: 0;
   }
 }
 
@@ -62,7 +50,6 @@
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-
   margin-bottom: 4px;
 }
 
