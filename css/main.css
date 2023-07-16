@@ -87,6 +87,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -1456,14 +1460,8 @@ body {
 /* Footer */
 .footer {
   background-color: var(--accent-background-color);
-  padding-top: 0;
-  padding-bottom: 0;
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer__address {

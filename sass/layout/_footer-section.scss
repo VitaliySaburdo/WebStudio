@@ -2,13 +2,8 @@
 
 .footer {
   background-color: var(--accent-background-color);
-  padding-top: 0;
-  padding-bottom: 0;
-
-  @include mq(desk) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer__address {
